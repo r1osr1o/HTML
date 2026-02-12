@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip - Авторские туры по экзотическим уголкам</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="fullscreen-video" id="fullscreenVideo">
+        <div class="video-container">
+            <button class="close-video-btn" id="closeVideoBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+
+        <header class="header">
+            <div class="header-container">
+                <img src="Trip.png" alt="Trip Logo" class="logo">
+                <nav class="nav">
+                    <a href="#tours" class="nav-link">Все туры</a>
+                    <a href="#reviews" class="nav-link">Отзывы</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+                <button class="burger-menu" id="burgerBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="hero-content">
+            <h1 class="hero-title wow animate__animated animate__fadeInDown">Открой для себя Новую Ирландию</h1>
+            <p class="hero-subtitle wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Авторские туры по экзотическим уголкам от Ивана Иванова</p>
+            
+            <div class="hero-buttons wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <button class="btn btn-primary" id="applicationBtn">Оставить заявку</button>
+                <button class="btn-video" id="videoReportBtn" onclick="window.open('https://rutube.ru/video/ac75b2ad20d4ca2a6f69a2738af3ad52/?r=plwd' , '_blank')">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Посмотрите видео-отчет 2018-2019</span>
+                </button>
+                
+            </div>
+        </div>
+
+        <!-- Grid  -->
+        <div class="destinations-grid wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+            <div class="destination-card">
+                <div class="card-number">02</div>
+                <img src="Vodo.jpg" alt="Водопады Исландии" class="destination-img">
+                <div class="destination-overlay">
+                    <h3 class="destination-title">Водопады Исландии</h3>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="card-number">03</div>
+                <img src="Dolo.jpg" alt="Сказочные Доломиты" class="destination-img">
+                <div class="destination-overlay">
+                    <h3 class="destination-title">Сказочные Доломиты</h3>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="card-number">04</div>
+                <img src="Norwe.jpg" alt="Неизвестная Норвегия" class="destination-img">
+                <div class="destination-overlay">
+                    <h3 class="destination-title">Неизвестная Норвегия</h3>
+                </div>
+            </div>
+            
+            <div class="social-promo">
+                <p>Подписывайтесь в соцсетях</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Индикатор -->
+        <div class="scroll-indicator wow animate__animated animate__fadeIn" data-wow-delay="1s">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="tours-section" id="tours">
+            <div class="container">
+                <div class="tour-card wow animate__animated animate__fadeInLeft">
+                    <div class="tour-image">
+                        <img src="Harw.jpg" alt="Большое ущелье на острове Гавайи" class="tour-img">
+                        <div class="tour-date">10-24 апреля</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-header">
+                            <h2 class="tour-title">Большое ущелье на острове Гавайи</h2>
+                            <h3 class="section-title">Посмотрите все направления туров</h3>
+                        </div>
+                        <p class="tour-description">
+                            Берега океанов и дикие пляжи с редкими породами деревьев. 
+                            Местная архитектура и первозданный вид дикой природы
+                        </p>
+                        <button class="btn btn-outline">Смотреть все</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section" id="contacts">
+            <div class="container">
+                <div class="form-container wow animate__animated animate__fadeIn">
+                    <h2 class="form-title">Оставьте заявку на бесплатную консультацию</h2>
+                    <p class="form-subtitle">Мы перезвоним вам в ближайшее время</p>
+                    
+                    <form id="consultationForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                        
+                        <p class="form-notice">
+                            Нажимая кнопку, вы даете согласие на 
+                            <a href="#">обработку персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="reviews-header wow animate__animated animate__fadeInDown">
+                    <h2 class="reviews-title">Что пишут участники наших путешествий</h2>
+                    <p class="reviews-stats">
+                        87% участников приходят по личной рекомендации от друзей. 
+                        А каждый 4-ый путешествует с нами больше двух раз!
+                    </p>
+                    <button class="btn btn-outline">Читать отзывы</button>
+                </div>
+                
+                <div class="review-card wow animate__animated animate__fadeInUp">
+                    <div class="review-content">
+                        <div class="review-label">Отзыв</div>
+                        <h4 class="review-author">Елена Иванова</h4>
+                        <p class="review-text">
+                            Пожалуй, это был самый лучший отпуск в моей жизни...
+                            Организация на высшем уровне, интересная программа и 
+                            незабываемые впечатления. Обязательно поеду снова!
+                        </p>
+                    </div>
+                    <div class="review-image">
+                        <img src="feeed.jpg" alt="Фото из путешествия" class="review-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="TripF.png" alt="Trip Logo" class="footer-logo">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-link">Соглашение на обработку персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
